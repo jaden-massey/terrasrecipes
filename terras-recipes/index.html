@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terra's Recipes - Home</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <div class="logo-div">
+                <a href="index.html"><img class="logo" src="./images/logo.webp" alt="logo" title="Home page"></a>
+                <div class="logo-text-div">
+                <a class="logo-text" href="index.html"><p>Terra's Recipes</p></a>
+                </div>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#">Recipes</a>
+                <a href="horchata.html">Horchata</a>
+                <a href="eggdrop.html">Eggdrop Soup</a>
+            </nav>
+        </header>
+        <div class="ss-container">
+            <div class="ss">
+            <div class="ss-numbertext">1 / 2</div>
+            <a href="horchata.html" target="_blank"><img class="ss-img" src="./images/banner-horchata.webp" alt="Horchata banner" title="Horchata"></a>
+            <div class="overlay">
+                <h4 class="overlay-header">Authentic Mexican Horchata</h4>
+                <div class="overlay-line"></div>
+                <p class="overlay-text">This refreshing beverage raining from Mexico is easy to make and will leave you wanting more with its sweet milky cinnamon flavor!</p>
+            </div>
+            </div>
+            
+            <div class="ss">
+            <div class="ss-numbertext">2 / 2</div>
+            <a href="eggdrop.html" target="_blank"><img class="ss-img" src="./images/banner-eggdrop.webp" alt="Egg Drop Soup banner" title="Egg Drop Soup"></a>
+            <div class="overlay">
+                <h4 class="overlay-header">Egg Drop Soup with Corn</h4>
+                <div class="overlay-line"></div>
+                <p class="overlay-text">This warm soup is excellent as an appetizer or entree for lunch or dinner! The rich savory flavor of the viscous soup base paired with ribbons of egg and the sweet corn is sure to impress!</p>
+            </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div class="dots" style="text-align:center">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+        </div>
+        <script src="scripts/script.js"></script>
+
+        <main class="main-grid">
+
+            <div class="about-me">
+                <img class="about-me-img" src="./images/TRHome1.webp" alt="Recipe Book">
+                <section class="about-me-text">
+                    <h1 class="ab-title">About Me</h1>
+                    <p>The idea behind my website is to offer a simple and easy way to locate recipes for both meals and drinks. In addition, I just hope to use this as a personal catalog for my own recipes, so that I can share my recipes with friends and family and access the recipes I frequent at any time and at any place. I hope to include recipes that are fairly simple, and those that may be more complicated and may make use of more exotic ingredients. I also want to keep this site very simple and easy to access rather than obfuscating its purpose by including unnecessary details and background behind the dish, and instead providing the recipe straight away, and including the notes below that go into detail about possible substitutions and adjustments that can be made to either change the flavor, texture, or accessibility of the dish to certain diets.</p>
+                </section>
+            </div>
+
+            <div class="main-line"></div>
+
+            <section class="recipes">
+                <h1 class="recipe-title">Recipes!</h1>
+
+                <div class="feat-recipe-card">
+                    <img src="./images/Placeholder-rect.webp" alt="Placeholder">
+                    <div class="feat-text">
+                        <h3>Placeholder Title</h3>
+                        <div class="feat-line"></div>
+                        <p>Placeholder description paragraph</p>
+                    </div>
+                </div>
+
+                <div class="runner-up-recipes">
+                    <img class="img1" src="./images/Horchata1-sq.webp" alt="Horchata">
+                    <div class="card1"><a href="horchata.html">Authentic Mexican Horchata</a></div>
+                    
+                    <img class="img2" src="./images/EggDropSoup2.webp" alt="Egg drop soup">
+                    <div class="card2"><a>Egg Drop Soup with Sweet Corn</a></div>
+                    
+                    <img class="img3" src="./images/Placeholder.webp" alt="placeholder">
+                    <div class="card3"><a href="#">Placeholder</a></div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="links">
+                <p><a href="site-plan.html" target="_blank">Site Plan</a></p>
+                <p><a href="#">Contact Us</a></p>
+            </div>
+            <p class="credits">Terra's Recipes &copy; 2022 - Jaden Massey</p>
+            <div class="socials">
+                <div class="icon1">
+                <a href="https://facebook.com" target="_blank"><img src="images/facebook.webp" alt="fb icon"></a>
+                </div>
+                <p class="text1"><a href="https://facebook.com" target="_blank">Facebook</a></p>
+                
+                <div class="icon2">
+                <a href="https://twitter.com" target="_blank"><img src="images/twitter.webp" alt="twitter icon"></a>
+                </div>
+                <p class="text2"><a href="https://twitter.com" target="_blank">Twitter</a></p>
+                
+                <div class="icon3">
+                <a href="https://instagram.com" target="_blank"><img src="images/instagram.webp" alt="instagram icon"></a>
+                </div>
+                <p class="text3"><a href="https://instagram.com" target="_blank">Instagram</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
