@@ -7,6 +7,7 @@
     <title>Terra's Recipes - Home</title>
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div id="content">
@@ -17,12 +18,18 @@
                 <a class="logo-text" href="index.html"><p>Terra's Recipes</p></a>
                 </div>
             </div>
-            <nav>
-                <a href="index.html">Home</a>
+            <div class="navbar" id="navi">
+                <nav>
+                <a href="index.html" class="nav-active">Home</a>
                 <a href="#">Recipes</a>
                 <a href="horchata.html">Horchata</a>
-                <a href="eggdrop.html">Eggdrop Soup</a>
-            </nav>
+                <a href="eggdrop.html">Egg Drop</a>
+                <a href="javascript:void(0);" class="nav-icon" onclick="navFunc()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                </nav>
+                <script src="./scripts/navscript.js"></script>
+            </div>
         </header>
         <div class="ss-container">
             <div class="ss">
@@ -73,7 +80,7 @@
                 <div class="feat-recipe-card">
                     <img src="./images/Placeholder-rect.webp" alt="Placeholder">
                     <div class="feat-text">
-                        <h3>Placeholder Title</h3>
+                        <h2>Placeholder Title</h2>
                         <div class="feat-line"></div>
                         <p>Placeholder description paragraph</p>
                     </div>

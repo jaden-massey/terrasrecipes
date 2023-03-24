@@ -18,27 +18,30 @@ body {
     padding: 0;
 }
 
-nav {
-    display: flex;
-    justify-content: space-around;
+.navbar {
+    padding: 35px;
 }
 
-nav a {
+.navbar a {
+    overflow: hidden;
+    padding: 35px;
     color: rgba(254, 250, 224, 1);
     text-decoration: none;
-    padding: 35px;
     text-align: center;
 }
 
-nav a:hover {
+.navbar a:hover {
     text-decoration: underline;
     background-color: rgba(96, 108, 56, 1);
 }
 
+.navbar .nav-icon {
+    display: none;
+}
+
 header {
     background-color: #283618;
-    display: grid;
-    grid-template-columns: 150px auto;
+    display: flex;
 }
 
 footer {
@@ -118,12 +121,11 @@ footer {
 .logo {
     width: 80px;
     border-radius: 50%;
-    padding: 0 20px 0 20px;
-    align-self: center;
+    margin: 0 auto;
+    padding-left: 10px;
 }
 
 .logo-text {
-    width: 100px;
     text-decoration: none;
     color: rgba(254, 250, 224, 1);
     font-family: Mynerve, Montserrat;
@@ -131,9 +133,15 @@ footer {
 
 }
 
+.logo-text-div {
+    padding: 10px;
+    margin: auto;
+}
+
 .logo-div {
     display: flex;
-    margin-right: -50px;
+    justify-content: center;
+    align-content: center;
 }
 
 .logo-div:hover {
@@ -200,7 +208,6 @@ footer {
     position: absolute;
     top: 0;
     left: 80%;
-
 }
 
 .overlay-text, .overlay-header {
@@ -339,7 +346,7 @@ footer {
     transform: scale(1.1);
 }
 
-.feat-recipe-card h3 {
+.feat-recipe-card h2 {
     text-align: center;
     grid-row: 2;
     color: rgba(254, 250, 224, 1);
@@ -434,13 +441,8 @@ footer {
     .runner-up-recipes {
         display: grid;
         grid-template-rows: repeat(3, 1fr);
-        margin: 0 auto;
-    }
-
-    .logo-div {
-        height: 50%;
-        padding-top: 100px;
-        padding-bottom: 100px;
+        margin: 0;
+        padding: 0;
     }
 
     .img1, .img2, .img3 {
@@ -448,7 +450,7 @@ footer {
     }
 
     .ss-container img {
-        height: 175px;
+        height: 5%;
     }
 
     .about-me {
@@ -460,11 +462,94 @@ footer {
         margin-bottom: 20px;
     }
 
-    nav {
-        flex-direction: column;
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+    
+    .nav-icon {
+        position: absolute;
+        right: 0;
+        top: 155px
     }
 
+    .navbar a.nav-icon {
+      float: right;
+      display: block;
+    }
 
+    .navbar {
+        padding: 20px;
+    }
+
+    .navbar a {
+        padding: 10px;
+    }
+
+    .navbar.responsive {
+        position: relative;
+        padding: 0px;
+    }
+    
+    .navbar.responsive a.nav-icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    .navbar.responsive a {
+        float: none;
+        display: block;
+
+        padding: 20px;
+    }
+
+    .feat-recipe-card {
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .feat-text {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .card1, .card2, .card3 { 
+        text-align: center;
+        grid-column: 1 / span 10;
+        height: 100px;
+    }
+
+    .runner-up-recipes a {
+        border-top-style: solid;
+        border-left-style: none;
+        padding: 10px;
+        width: auto;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    .img1, .img2, .img3 {
+        grid-column: 5;
+        margin-bottom: 125px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .socials {
+        grid-template-areas:
+        ". icon1 text1 ."
+        ". icon2 text2 ."
+        ". icon3 text3 ."
+    }
+
+    .icon1, .icon2, .icon3 {
+        justify-self: self-end;
+        padding-right: 10px;
+    }
 }
 
 @media screen and (max-width: 950px) {
@@ -480,7 +565,8 @@ footer {
 
     .card1, .card2, .card3 {
         margin: 50px;
-        padding-left: 100px;
+        padding: 0;
+        text-align: center;
     }
 
     .about-me img {
@@ -494,9 +580,7 @@ footer {
         padding: 10px;
     }
 
-    .logo-text {
-        width: 0;
-        display: none;
+    .logo-text-div {
         padding: 0;
         margin: 0;
     }
@@ -505,14 +589,31 @@ footer {
         align-self: center;
         justify-self: center;
         margin: auto;
-        margin-left: 10px;
+        width: 80px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .logo-div {
+        flex-direction: column;
         width: 100%;
         margin: 0 auto;
         align-items: center;
         justify-items: center;
+    }
+
+    header {
+        display: block;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar a {
+        padding-left: 3vw;
+        padding-right: 3vw;
     }
 
     .overlay {
@@ -528,9 +629,14 @@ footer {
         width: 100%;
         padding-bottom: 20px;
     }
+}
 
-    nav a {
-        padding-left: 0;
-        padding-right: 0;
+@media screen and (max-width: 1600px) {
+    .about-me img {
+        margin-top: 18%;
+        max-width: 500px;
+        max-height: 300px;
+        width: 50%;
+        height: 40%;
     }
 }
