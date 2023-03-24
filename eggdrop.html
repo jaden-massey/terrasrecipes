@@ -11,16 +11,24 @@
 <body>
     <div id="content">
         <header>
-            <a id="logo_link" href="index.html">
-                <img class="logo" src="./images/logo.png" alt="logo" title="Home page">
-                <p class="logo-text">Terra's Recipes</p>
-            </a>
-            <nav>
-                <a href="index.html">Home</a>
+            <div class="logo-div">
+                <a href="index.html"><img class="logo" src="./images/logo.webp" alt="logo" title="Home page"></a>
+                <div class="logo-text-div">
+                <a class="logo-text" href="index.html"><p>Terra's Recipes</p></a>
+                </div>
+            </div>
+            <div class="navbar" id="navi">
+                <nav>
+                <a href="index.html" class="nav-active">Home</a>
                 <a href="#">Recipes</a>
                 <a href="horchata.html">Horchata</a>
-                <a href="eggdrop.html">Eggdrop Soup</a>
-            </nav>
+                <a href="eggdrop.html">Egg Drop</a>
+                <a href="javascript:void(0);" class="nav-icon" onclick="navFunc()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                </nav>
+                <script src="./scripts/navscript.js"></script>
+            </div>
         </header>
         
         <main class="recipe-grid">
@@ -121,19 +129,26 @@
         </main>
 
         <footer>
-            <p>Terra's Recipes &copy; 2022 - Jaden Massey</p>
-            <p><a href="site-plan.html" target="_blank">Site Plan</a></p>
-            <p><a href="#">Contact Us</a></p>
+            <div class="links">
+                <p><a href="site-plan.html" target="_blank">Site Plan</a></p>
+                <p><a href="#">Contact Us</a></p>
+            </div>
+            <p class="credits">Terra's Recipes &copy; 2022 - Jaden Massey</p>
             <div class="socials">
-                <a href="https://facebook.com" target="_blank">
-                    <img src="images/facebook.png" alt="fb icon">
-                </a>
-                <a href="https://twitter.com" target="_blank">
-                    <img src="images/twitter.png" alt="twitter icon">
-                </a>
-                <a href="https://instagram.com" target="_blank">
-                    <img src="images/instagram.png" alt="instagram icon">
-                </a>
+                <div class="icon1">
+                <a href="https://facebook.com" target="_blank"><img src="images/facebook.webp" alt="fb icon"></a>
+                </div>
+                <p class="text1"><a href="https://facebook.com" target="_blank">Facebook</a></p>
+                
+                <div class="icon2">
+                <a href="https://twitter.com" target="_blank"><img src="images/twitter.webp" alt="twitter icon"></a>
+                </div>
+                <p class="text2"><a href="https://twitter.com" target="_blank">Twitter</a></p>
+                
+                <div class="icon3">
+                <a href="https://instagram.com" target="_blank"><img src="images/instagram.webp" alt="instagram icon"></a>
+                </div>
+                <p class="text3"><a href="https://instagram.com" target="_blank">Instagram</a></p>
             </div>
         </footer>
     </div>
