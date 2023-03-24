@@ -431,6 +431,96 @@ footer {
     grid-row: 3;
 }
 
+
+@media screen and (max-width: 1600px) {
+    .about-me img {
+        margin-top: 18%;
+        max-width: 500px;
+        max-height: 300px;
+        width: 50%;
+        height: 40%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    html, body {
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    .recipes {
+        display: block;
+    }
+
+    .card1, .card2, .card3 {
+        margin: 50px;
+        padding: 0;
+        text-align: center;
+    }
+
+    .about-me img {
+        display: none;
+    }
+
+    .about-me-text {
+        margin: 0 auto;
+        width: 85%;
+        height: 100%;
+        padding: 10px;
+    }
+
+    .logo-text-div {
+        padding: 0;
+        margin: 0;
+    }
+
+    .logo {
+        align-self: center;
+        justify-self: center;
+        margin: auto;
+        width: 80px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .logo-div {
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        align-items: center;
+        justify-items: center;
+    }
+
+    header {
+        display: block;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar a:not(.nav-icon) {
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+
+    .overlay {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        left: 0;
+        height: 20vh;
+    }
+
+    .overlay-text {
+        width: 90%;
+        padding-bottom: 20px;
+        align-self: center;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .prev,
     .next,
@@ -551,90 +641,18 @@ footer {
     }
 }
 
-@media screen and (max-width: 950px) {
-    html, body {
-        padding: 0;
-        margin: 0;
-        overflow-x: hidden;
-    }
-
-    .recipes {
-        display: block;
-    }
-
-    .card1, .card2, .card3 {
-        margin: 50px;
-        padding: 0;
-        text-align: center;
-    }
-
-    .about-me img {
+@media screen and (max-width: 400px) { 
+    
+    .overlay-text, .overlay-line {
         display: none;
     }
 
-    .about-me-text {
-        margin: 0 auto;
-        width: 85%;
-        height: 100%;
-        padding: 10px;
-    }
-
-    .logo-text-div {
-        padding: 0;
-        margin: 0;
-    }
-
-    .logo {
+    .overlay-header {
+        grid-row: 3/9;
         align-self: center;
-        justify-self: center;
-        margin: auto;
-        width: 80px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .logo-div {
-        flex-direction: column;
-        width: 100%;
-        margin: 0 auto;
-        align-items: center;
-        justify-items: center;
-    }
-
-    header {
-        display: block;
-    }
-
-    .navbar {
-        display: flex;
-        justify-content: center;
-    }
-
-    .navbar a:not(.nav-icon) {
-        padding-left: 3vw;
-        padding-right: 3vw;
     }
 
     .overlay {
-        position: relative;
-        width: 100%;
-        margin: 0 auto;
-        left: 0;
-        height: 8%;
-    }
-
-    .overlay-text {
-        width: 100%;
-        padding-bottom: 20px;
-    }
-}
-
-@media screen and (max-width: 1600px) {
-    .about-me img {
-        margin-top: 18%;
-        max-width: 500px;
-        max-height: 300px;
-        width: 50%;
-        height: 40%;
+        height: 30vw;
     }
 }
