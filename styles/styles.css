@@ -24,7 +24,7 @@ body {
 
 .navbar a {
     overflow: hidden;
-    padding: 35px;
+    padding: 20px;
     color: rgba(254, 250, 224, 1);
     text-decoration: none;
     text-align: center;
@@ -469,7 +469,7 @@ footer {
     .nav-icon {
         position: absolute;
         right: 0;
-        top: 155px
+        top: 145px;
     }
 
     .navbar a.nav-icon {
@@ -482,7 +482,7 @@ footer {
     }
 
     .navbar a {
-        padding: 10px;
+        padding: 20px;
     }
 
     .navbar.responsive {
@@ -499,7 +499,6 @@ footer {
     .navbar.responsive a {
         float: none;
         display: block;
-
         padding: 20px;
     }
 
@@ -611,7 +610,7 @@ footer {
         justify-content: center;
     }
 
-    .navbar a {
+    .navbar a:not(.nav-icon) {
         padding-left: 3vw;
         padding-right: 3vw;
     }
