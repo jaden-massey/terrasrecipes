@@ -276,6 +276,7 @@ footer {
     margin-left: 15%;
     padding: 30px;
     font-size: 20px;
+    border-radius: 5px;
 }
 
 .about-me-text p {
@@ -295,6 +296,7 @@ footer {
     max-width: 30%;
     margin: 2% 15% 0 0;
     padding: 0;
+    border-radius: 5px;
 }
 
 .main-line {
@@ -338,12 +340,7 @@ footer {
     display: grid;
     grid-template-rows: 1fr 50px 20px 1fr;
     box-shadow: 5px 5px 10px #6f7364;
-    transition: transform .5s;
-}
-
-.feat-text:hover {
-    opacity: .6;
-    transform: scale(1.1);
+    border-radius: 5px;
 }
 
 .feat-recipe-card h2 {
@@ -374,6 +371,7 @@ footer {
     max-height: 200px;
     height: 50vw;
     box-shadow: 5px 5px 10px #6f7364;
+    border-radius: 5px;
 }
 
 .runner-up-recipes {
@@ -404,6 +402,7 @@ footer {
     display: flex;
     padding-left: 50px;
     box-shadow: 5px 5px 10px #6f7364;
+    border-radius: 5px;
 }
 
 .runner-up-recipes a {
