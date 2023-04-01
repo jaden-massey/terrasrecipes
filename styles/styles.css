@@ -646,8 +646,10 @@ li:not(.recipe-header li) {
         margin-bottom: -150px;
     }
 
-    .recipe-header h1 {
-        width: 500px;
+    .recipes h1 {
+        width: 300px;
+        margin: auto;
+        margin-top: 125px;
     }
     
     .recipe-header > div {
@@ -860,12 +862,6 @@ li:not(.recipe-header li) {
         float: none;
         display: block;
         padding: 20px;
-    }
-
-    .recipes h1 {
-        width: 80%;
-        margin: auto;
-        margin-top: 125px;
     }
 
     .feat-recipe-card {
