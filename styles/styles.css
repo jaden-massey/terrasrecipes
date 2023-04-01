@@ -862,10 +862,17 @@ li:not(.recipe-header li) {
         padding: 20px;
     }
 
+    .recipes h1 {
+        width: 80%;
+        margin: auto;
+        margin-top: 125px;
+    }
+
     .feat-recipe-card {
         margin: 0 auto;
         margin-bottom: 50px;
     }
+
     .feat-text {
         width: 90%;
         margin: 0 auto;
